@@ -75,6 +75,7 @@ CAPTCHA không được tự động giải hoặc vượt qua. Người dùng p
 
 ### Cài extension
    **Sử dụng qua Developer Mode**
+   
       1. Mở `chrome://extensions/` hoặc `edge://extensions/`.
       
       2. Bật **Developer mode**.
