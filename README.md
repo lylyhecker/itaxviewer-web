@@ -105,6 +105,8 @@ Extension cài bằng **Load unpacked** bắt buộc phải bật Developer mode
 - Nếu autofill không hoạt động sau khi cập nhật extension, hãy bấm **Reload** tại trang quản lý extension rồi mở lại trang tra cứu.
 - Không cung cấp mã CAPTCHA hoặc dữ liệu nhạy cảm cho bên thứ ba.
 
+## Theme được dùng AI để nâng cấp, còn lại mọi thứ đều được phát triển bởi @lylyhecker
+
 ## Tệp chính
 
 - [iTaxViewer-Web.html](./iTaxViewer-Web.html): ứng dụng đọc XML và xuất PDF.
