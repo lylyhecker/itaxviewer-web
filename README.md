@@ -7,10 +7,10 @@
 Mở trực tiếp file:
 
 ```text
-iTaxViewer-Web.html
+index.html
 ```
 
-Hoặc kéo file `iTaxViewer-Web.html` vào Chrome, Microsoft Edge hoặc trình duyệt Chromium tương thích.
+Hoặc kéo file `index.html` vào Chrome, Microsoft Edge hoặc trình duyệt Chromium tương thích.
 
 Ứng dụng không cần máy chủ web và không cần cài đặt thư viện bổ sung để đọc XML.
 
@@ -103,14 +103,7 @@ CAPTCHA không được tự động giải hoặc vượt qua. Người dùng p
 
 - Nên kiểm tra lại mã và thông tin hiển thị trước khi tra cứu.
 - Trang tra cứu của nhà cung cấp có thể thay đổi giao diện hoặc tên trường nhập liệu.
-- Nếu autofill không hoạt động sau khi cập nhật extension, hãy bấm **Reload** tại trang quản lý extension rồi mở lại trang tra cứu.
+- Nếu autofill không hoạt động sau khi cập nhật extension, hãy bấm **Reload** tại trang quản lý extension nếu sử dụng bản beta ở trên github rồi mở lại trang tra cứu.
 - Không cung cấp mã CAPTCHA hoặc dữ liệu nhạy cảm cho bên thứ ba.
 
 ## Theme được dùng AI để nâng cấp, còn lại mọi thứ đều được phát triển bởi @lylyhecker
-
-## Tệp chính
-
-- [iTaxViewer-Web.html](./iTaxViewer-Web.html): ứng dụng đọc XML và xuất PDF.
-- [petrolimex-autofill/manifest.json](./petrolimex-autofill/manifest.json): cấu hình browser extension.
-- [petrolimex-autofill/content.js](./petrolimex-autofill/content.js): logic tự điền mã tra cứu.
-- [petrolimex-autofill/popup.html](./petrolimex-autofill/popup.html): nội dung popup của extension.
