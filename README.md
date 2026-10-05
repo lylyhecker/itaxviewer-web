@@ -88,6 +88,7 @@ CAPTCHA không được tự động giải hoặc vượt qua. Người dùng p
 6. Mở menu **Extensions** và ghim extension nếu muốn icon xuất hiện trên thanh trình duyệt.
 
 Extension cài bằng **Load unpacked** bắt buộc phải bật Developer mode. Muốn tắt Developer mode, extension cần được phát hành qua Chrome Web Store/Edge Add-ons hoặc được cài bằng chính sách quản trị doanh nghiệp.
+**Đang trong quá trình upload lên Microsoft Edge Add-ons**
 
 ## Quyền riêng tư
 
