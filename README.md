@@ -73,22 +73,23 @@ Extension có thể:
 
 CAPTCHA không được tự động giải hoặc vượt qua. Người dùng phải tự nhập CAPTCHA và tự bấm nút tra cứu.
 
-### Cài extension ở chế độ phát triển
+### Cài extension
+   **Sử dụng qua Developer Mode**
+      1. Mở `chrome://extensions/` hoặc `edge://extensions/`.
+      2. Bật **Developer mode**.
+      3. Chọn **Load unpacked**.
+      4. Chọn thư mục:
+      
+         ```text
+         autofill
+         ```
+      
+      5. Nếu đã sửa extension, bấm **Reload**.
+      6. Mở menu **Extensions** và ghim extension nếu muốn icon xuất hiện trên thanh trình duyệt.
 
-1. Mở `chrome://extensions/` hoặc `edge://extensions/`.
-2. Bật **Developer mode**.
-3. Chọn **Load unpacked**.
-4. Chọn thư mục:
-
-   ```text
-   petrolimex-autofill
-   ```
-
-5. Nếu đã sửa extension, bấm **Reload**.
-6. Mở menu **Extensions** và ghim extension nếu muốn icon xuất hiện trên thanh trình duyệt.
-
-Extension cài bằng **Load unpacked** bắt buộc phải bật Developer mode. Muốn tắt Developer mode, extension cần được phát hành qua Chrome Web Store/Edge Add-ons hoặc được cài bằng chính sách quản trị doanh nghiệp.
-**Đang trong quá trình upload lên Microsoft Edge Add-ons**
+      Extension cài bằng **Load unpacked** bắt buộc phải bật Developer mode. Muốn tắt Developer mode, extension cần được phát hành qua Chrome Web Store/Edge Add-ons hoặc được cài bằng chính sách quản trị doanh nghiệp nên tải qua Microsoft Edge Add-ons
+   **Trên Microsoft Edge Add-ons**
+      https://microsoftedge.microsoft.com/addons/detail/fjnjfcanghmcendmceondpkjbeicbneb
 
 ## Quyền riêng tư
 
