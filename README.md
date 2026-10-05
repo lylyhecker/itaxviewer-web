@@ -61,7 +61,7 @@ Việc nhận diện nhà cung cấp có thể dựa trên:
 
 ## Extension autofill tùy chọn
 
-Thư mục `petrolimex-autofill` chứa browser extension hỗ trợ tự điền mã tra cứu trên website của các nhà cung cấp.
+Thư mục `autofill` chứa browser extension hỗ trợ tự điền mã tra cứu trên website của các nhà cung cấp.
 
 Extension có thể:
 
@@ -76,8 +76,11 @@ CAPTCHA không được tự động giải hoặc vượt qua. Người dùng p
 ### Cài extension
    **Sử dụng qua Developer Mode**
       1. Mở `chrome://extensions/` hoặc `edge://extensions/`.
+      
       2. Bật **Developer mode**.
+      
       3. Chọn **Load unpacked**.
+      
       4. Chọn thư mục:
       
          ```text
@@ -85,6 +88,7 @@ CAPTCHA không được tự động giải hoặc vượt qua. Người dùng p
          ```
       
       5. Nếu đã sửa extension, bấm **Reload**.
+      
       6. Mở menu **Extensions** và ghim extension nếu muốn icon xuất hiện trên thanh trình duyệt.
 
       Extension cài bằng **Load unpacked** bắt buộc phải bật Developer mode. Muốn tắt Developer mode, extension cần được phát hành qua Chrome Web Store/Edge Add-ons hoặc được cài bằng chính sách quản trị doanh nghiệp nên tải qua Microsoft Edge Add-ons
