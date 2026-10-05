@@ -2733,6 +2733,26 @@
             return fallbackId;
         }
 
+        function invPetrolimexCode(...nodes) {
+            const names = new Set(['fkey', 'matracuu', 'lookupcode', 'invoicelookupcode']);
+            for (const node of nodes) {
+                if (!node) continue;
+                const all = [node, ...Array.from(node.getElementsByTagName('*'))];
+                for (const item of all) {
+                    if (names.has(String(item.localName || '').toLowerCase())) {
+                        const value = item.textContent.trim();
+                        if (value) return value;
+                    }
+                    if (String(item.localName || '').toLowerCase() === 'ttin') {
+                        const fieldName = invNormalize(xText(item, 'TTruong'));
+                        const value = xText(item, 'DLieu');
+                        if (value && names.has(fieldName.replace(/[^a-z0-9]/g, ''))) return value;
+                    }
+                }
+            }
+            return '';
+        }
+
         function invNormalize(value) {
             return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
         }
@@ -2879,6 +2899,9 @@
                 /sapo/i.test(providerText) ? 'sapo' :
                 /viettel|sinvoice/i.test(providerText) ? 'viettel' :
                 /cellphones|cell phone/i.test(providerText) ? 'cellphones' : metadataProvider;
+            if (ctx.provider === 'petrolimex') {
+                ctx.maTraCuu = invPetrolimexCode(hdon, dl, ttc) || ctx.maTraCuu;
+            }
             ctx.providerCode = ctx.provider ? ctx.maTraCuu : '';
             ctx.providerCustomerMst = ctx.seller ? (ctx.seller.mst || '') : '';
             ctx.petrolimexCode = ctx.provider === 'petrolimex' ? ctx.providerCode : '';
